@@ -1,0 +1,1297 @@
+.header
+  height auto
+  &_nav
+    display flex
+    justify-content center
+    padding 22px
+    background c_main
+    &__item
+      width auto
+      padding 0 28px
+      border-right 1px solid
+      font-size 14px
+      letter-spacing .7px
+      line-height .8
+      text-transform uppercase
+      color c_acc-cont
+      &--active
+        color c_acc
+        &:before
+          color c_acc
+      &:last-of-type
+        border-color transparent
+    .fas
+      font-size 12px
+  &_block
+    display flex
+    justify-content space-between
+    align-content center
+    padding-top 55px
+    padding-bottom 13px
+    max_width()
+  .contacts
+    width 200px
+    padding-top 3px
+    text-align right
+    font-weight bold
+    color c_acc-cont
+    &_tel
+      margin-left 7px
+      letter-spacing 1.4px
+    .fa-phone
+      transform rotate(90deg)
+      color c_acc-cont
+      font-size 11px
+      line-height 1
+    &_mail
+      display block
+      font-size 14px
+      line-height 1.7
+      letter-spacing 1.4px
+      text-transform uppercase
+  .logo
+    position relative
+    z-index 2
+    display block
+    width 305px
+    &:before
+      content ""
+      position absolute
+      top 0
+      left 0
+      width 274px
+      height 85px
+      background url(../images/logo.png) no-repeat center
+      background-size contain
+      z-index 3
+    &_name
+      margin-left -44px
+      font-family f_acc
+      font-size 45px
+      line-height .7
+      text-align center
+      color c_cont
+      letter-spacing 0
+      &__bottom
+        margin-left 18px
+        letter-spacing 0
+        line-height .4
+    &_type
+      margin-top 18px
+      margin-left -31px
+      font-size 12px
+      text-align center
+      text-transform uppercase
+      letter-spacing 1.8px
+      color c_acc-cont
+  .cart
+    width 170px
+    text-transform uppercase
+    color c_acc-cont
+    .fas:before
+      margin-right 12px
+      font-size 11px
+    &_icon
+      display block
+      line-height 1.5
+      letter-spacing 1.2px
+    &_number
+      line-height 1.4
+      &__text
+        margin-left 8px
+      &__price
+        margin-left 7px
+        letter-spacing 2px
+  .mobile-nav-button
+  .mobile-menu
+    display none
+.main
+  .flexslider
+    padding-top 1px
+    &:before
+      mask()
+      z-index 1
+      top 1px
+    .slider_content
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      z-index 1
+      display flex
+      justify-content center
+      align-items center
+      flex-direction column
+      &:before
+        content ""
+        position absolute
+        center-x()
+        top -103px
+        z-index 1
+        display block
+        width 200px
+        height 145px
+        background #fff
+        border-radius 100%
+      &__headline
+        display block
+        max-width 800px
+        margin-top 17px
+        text-transform uppercase
+        text-align center
+        color #fff
+        font-size 60px
+        letter-spacing 7px
+        line-height 1
+        &:before
+          content ""
+          position relative
+          bottom 44px
+          display block
+          width 112px
+          height 2px
+          background-color #fff
+          margin 0 auto
+        &:after
+          content ""
+          position relative
+          top 47px
+          display block
+          width 112px
+          height 2px
+          background-color #fff
+          margin 0 auto
+      &__btn
+        margin-top 108px
+    &_circle-btn
+      position absolute
+      bottom -1px
+      center-x()
+      z-index 1
+  .welcome
+    pad_content()
+    max_width()
+    &_headline
+      color c_cont
+    .three-blocks
+      position relative
+      display grid
+      display -ms-grid
+      grid-template-columns 1fr 1fr 1fr
+      -ms-grid-columns 1fr w_gatter 1fr w_gatter 1fr
+      grid-gap w_gatter
+      padding-top 22px
+      padding-bottom 21px
+      &_item
+        position relative
+        height 475px
+        &:before
+          mask()
+        &__name
+          position absolute
+          center-y()
+          center-x()
+          top 46.6%
+          z-index 2
+          font-family f_acc
+          font-size 42px
+          color #fff
+          line-height .84
+        &--events
+          background url(../images/2.png) no-repeat
+          background-position 52% 98%
+          -ms-grid-row 1
+          -ms-grid-column 1
+        &--food
+          background url(../images/3.png) no-repeat center
+          background-position 59% 63%
+          -ms-grid-row 1
+          -ms-grid-column 3
+          .three-blocks_item__name
+            width 110px
+            margin-top -7px
+        &--venues
+          background url(../images/4.png) no-repeat center
+          background-position 19% 52%
+          -ms-grid-row 1
+          -ms-grid-column 5
+          .three-blocks_item__name
+            margin-left 4px
+
+        &__btn
+          position absolute
+          bottom 0
+          center-x()
+    &_btn
+      position relative
+      center-x()
+      margin-top 45px
+
+  .introduction
+    position relative
+    pad_content()
+    margin-top 5px
+    overflow visible
+    padding-bottom 0
+    &--about-us
+      background c_main
+      &:after
+        content ''
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        z-index 0
+        background url(../images/5.png) no-repeat
+        background-position center
+        background-attachment fixed
+        height 497px
+    &_content__img--about-us
+      background url(../images/6.png) no-repeat
+      background-position 60% 19%
+    &:before
+      height 497px
+      mask()
+      z-index 1
+    &_headline
+      padding-right 4px
+      color #fff
+      z-index 2
+      &:after
+        background #fff
+    &_content
+      position relative
+      z-index 1
+      display grid
+      display -ms-grid
+      grid-template-columns 1fr 1fr
+      -ms-grid-columns 1fr 1fr
+      max-width w_cont
+      margin 22px auto 0
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+        -ms-grid-column-span 1
+      > div:nth-child(2)
+        -ms-grid-row 1
+        -ms-grid-column 2
+        -ms-grid-column-span 2
+      &__text
+        padding 63px 67px 73px 85px
+        background #fff
+
+
+  .about-us
+    &_date
+      display inline-block
+      float left
+      margin 2px 9px -4px -5px
+      font-size 28px
+      font-weight bold
+      letter-spacing .3px
+    &_text
+      padding-top 9px
+      line-height 1.7
+      letter-spacing 0
+      &__btn
+        min-width 213px
+        margin-top 48px
+        padding 21px 21px
+        font-size 14px
+        letter-spacing 1.9px
+        box-sizing border-box
+        text-align center
+
+  .menu
+    pad_content()
+    max_width()
+    background c_main
+    &_headline
+      &:before
+        top 16px
+      &:after
+        top 42px
+    &-items
+      display grid
+      display -ms-grid
+      grid-template-columns repeat(4,1fr)
+      -ms-grid-columns 1fr w_gatter 1fr w_gatter 1fr w_gatter 1fr
+      grid-gap w_gatter
+      max-width 1167px
+      margin 0 auto
+      padding 25px 0
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+      > div:nth-child(2)
+        -ms-grid-row 1
+        -ms-grid-column 3
+      > div:nth-child(3)
+        -ms-grid-row 1
+        -ms-grid-column 5
+      > div:nth-child(4)
+        -ms-grid-row 1
+        -ms-grid-column 7
+      &_item
+        padding 14px 14px 0 14px
+        background #fff
+        &__img
+          width 100%
+          height 161px
+          &--canapes
+            background url(../images/7.png) no-repeat
+            background-position 65% 74%
+          &--plates
+            background url(../images/8.png) no-repeat
+            background-position 17% 26%
+          &--sweets
+            background url(../images/9.png) no-repeat
+            background-position 17% 36%
+          &--drinks
+            background url(../images/10.png) no-repeat
+            background-position 83% 22%
+        &__name
+          margin 17px -14px
+          padding-top 20px
+          font-weight bold
+          font-size 16px
+          letter-spacing 1.6px
+          text-transform uppercase
+          text-align center
+          color c_acc-cont
+          background linear-gradient( rgba(243, 241, 236, 0.5215686274509804) 5%,transparent 100%, transparent 100%)
+        &__btn
+          margin-top 23px
+          background c_main
+    &_other
+      padding 26px 0
+      padding-left 2px
+      font-size 20px
+      font-weight bold
+      letter-spacing .2px
+      text-align center
+    &_btn
+      position relative
+      center-x()
+      margin-top 30px
+      margin-bottom 20px
+      padding 21px 50px
+  .event
+    pad_content()
+    max_width()
+    .plans-wrap
+      display grid
+      display -ms-grid
+      grid-template-columns 365px 1fr 365px
+      -ms-grid-columns 365px 1fr 365px
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+
+      > div:nth-child(2)
+        -ms-grid-row 1
+        -ms-grid-column 2
+
+      > div:nth-child(3)
+        -ms-grid-row 1
+        -ms-grid-column 3
+
+      .plan
+        position relative
+        padding-bottom 46px
+        &_headline
+          margin-bottom 45px
+          font-size 18px
+          font-weight bold
+          line-height 1.4
+          letter-spacing 1.7px
+          text-transform uppercase
+        &_text
+          line-height 1.6
+          letter-spacing 0
+        &_number
+          position absolute
+          top -6px
+          font-size 40px
+          font-weight bold
+          color lighten(c_grey, 70%)
+      &_center
+        border-radius 100%
+        background url(../images/11.png) no-repeat
+        background-position: 46% 35%;
+        width 100%
+        height 100%
+        max-width 432px
+        max-height 432px
+        margin-left 2px
+        margin-top 20px
+      &_left
+        padding 20px 31px 0 0
+        text-align right
+        .plan
+          padding-right 64px
+          &_text
+            padding-right 2px
+          &_number
+            right 0
+      &_right
+        padding 20px 0 0 31px
+        text-align left
+        .plan
+          padding-left 62px
+          &_text
+          &_number
+            left 0
+    &_btn
+      position relative
+      center-x()
+      margin-top 19px
+
+
+  .book
+    position relative
+    pad_content()
+    margin-top 10px
+    //height 497px
+    overflow visible
+    background url(../images/12.png) no-repeat
+    background-position 98% 27%
+    &:before
+      mask()
+    &_headline
+      max-width 640px
+      padding-top 94px
+      color #fff
+      &:after
+        background #fff
+        top 38px
+    .headline_text
+      padding-right 7px
+      font-size 50px
+      letter-spacing 0
+    &_btn
+      position relative
+      center-x()
+      margin-top 18px
+      margin-bottom 20px
+      padding 27px 42px
+      font-size 16px
+      letter-spacing 2px
+  .reviews
+    pad_content()
+    max_width()
+    .carousel
+      position relative
+      overflow hidden
+    .headline:before
+      top 15px
+      left 49%
+    .headline_text
+      line-height: 1.3;
+    &-slides
+      position relative
+      margin-top 64px
+      display block
+      float left
+      text-align center
+      background #fff
+      box-sizing border-box
+      &_img
+        position absolute
+        center-x()
+        top -54px
+        background url(../images/13.png) no-repeat
+        background-position 18% 49%
+        width 100px
+        height 100px
+        border-radius 100%
+        border 3px solid c_main
+        box-sizing border-box
+        z-index 1
+      &_content
+        max-width 878px
+        margin 62px auto 0
+        padding 20px 0
+        font-weight bold
+        font-size 20px
+        color c_acc-cont
+        line-height 1.6
+        letter-spacing .42px
+      &_name
+        margin-top 25px
+        padding 26px 0
+        letter-spacing 0
+        background linear-gradient(rgba(243,241,236,0.522) 5%, transparent 100%, transparent 100%)
+
+
+  .blog
+    pad_content()
+    max_width()
+    &_headline
+      margin-top 10px
+      &:before
+        top 15px
+      .headline_text
+        margin-top 13px
+    &-items
+      display flex
+      flex-direction row
+      padding 20px 0
+      margin 0 -13px
+      &_item
+        width 100%
+        margin 0 13px
+        &__img
+          width 100%
+          height 200px
+          &--location
+            background url("../images/14.png") no-repeat 47% 41%
+          &--services
+            background url("../images/15.png") no-repeat 42% 47%
+          &--menu
+            background url("../images/16.png") no-repeat 45% 65%
+        &__date
+          margin-top 29px
+          padding 5px 30px
+          font-size 14px
+          letter-spacing 1.4px
+          font-weight bold
+          text-align center
+          text-transform uppercase
+          color c_acc-cont
+        &__headline
+          padding 3px 30px
+          font-size 22px
+          font-weight bold
+          text-align center
+          letter-spacing 0
+          line-height 1.5
+          &:after
+            content ""
+            position relative
+            top 22px
+            display block
+            width 112px
+            height 2px
+            background-color c_acc-cont
+            margin 0 auto
+    &_btn
+      position relative
+      margin-top 46px
+      padding 21px 46px
+      center-x()
+  .introduction--chef
+    margin-top 11px
+    background c_main
+    &:after
+      content ''
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      z-index 0
+      background-attachment fixed
+      height 497px
+      background url("../images/17.png") no-repeat 101% 51%
+      background-attachment fixed
+    .headline
+      padding-right 0
+      padding-top 8px
+    .introduction_content__img--chef
+      background url(../images/18.png) no-repeat
+      background-position 25% 51%
+
+    .chef
+      &_text
+        padding-top 73px
+        line-height 24.2px
+        &__content
+          position relative
+          z-index 1
+          &:before
+            content "\f10d"
+            font-family FontAwesome
+            position absolute
+            font-size 62px
+            color c_main
+            transform rotate(9deg)
+            z-index -1
+          &:after
+            content ""
+            position absolute
+            bottom -37px
+            left 0
+            width 112px
+            height 2px
+            background-color c_acc-cont
+        &__name
+          display block
+          margin-top 60px
+          font-size 20px
+          letter-spacing 0.8px
+          &--position
+            display inline-block
+            font-size 14px
+            letter-spacing 0
+        &__btn
+          margin-top 52px
+          padding 19px 55px
+
+  .staff-wrapper
+    max_width()
+    pad_content()
+    padding-bottom 84px
+    .headline
+      padding-right 3px
+      &:before
+        top 14px
+        left 49%
+      &_text
+        margin-top 14px
+    .staff
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content center
+      margin 22px -10px
+      &_item
+        width 100%
+        flex 0 0 260px
+        margin 20px 10px
+        &__img
+          width 87%
+          height 245px
+          margin 0 auto
+          border-radius 100%
+          &--amanda
+            background url(../images/19.png) no-repeat
+            background-position 50.7% 4%
+          &--joseph
+            background url(../images/20.png) no-repeat
+            background-position 47% 26.6%
+          &--anthony
+            background url(../images/21.png) no-repeat
+            background-position 37% 11%
+          &--julia
+            background url(../images/22.png) no-repeat
+            background-position 77% 27%
+        &__name
+          margin-top 44px
+          font-size 20px
+          text-align center
+          color c_acc-cont
+        &__position
+          margin-top 10px
+          text-align center
+          letter-spacing 0
+  .gallery-block
+    pad_content()
+    padding-right 0
+    padding-left 0
+    .gallery
+      display grid
+      display -ms-grid
+      -ms-grid-columns 1fr w_gatter 1fr w_gatter 1fr
+      grid-template-columns 1fr 1fr 1fr
+      -ms-grid-rows 365px w_gatter 365px
+      grid-template-rows 365px 365px
+      grid-gap w_gatter
+      padding-top 17px
+      &_photoset
+        position relative
+        height auto
+        opacity .9
+        &:nth-child(1)
+          -ms-grid-row 1
+          -ms-grid-column 1
+        &:nth-child(2)
+          -ms-grid-row 1
+          -ms-grid-column 3
+        &:nth-child(3)
+          -ms-grid-row 1
+          -ms-grid-row-span 3
+          -ms-grid-column 5
+          grid-row 1/3
+          grid-column 3
+        &:nth-child(4)
+          -ms-grid-row 3
+          -ms-grid-column 1
+        &:nth-child(5)
+          -ms-grid-row 3
+          -ms-grid-column 3
+
+        img
+          right 0
+          width 100%
+          height 100%
+        &:nth-child(1)
+            background url("../images/23.png") no-repeat
+            background-position 88% 90%
+        &:nth-child(2)
+             background url("../images/24.png") no-repeat
+             background-position 69% 61%
+        &:nth-child(3)
+            background url("../images/25.png") no-repeat
+            background-position 60% 60%
+        &:nth-child(4)
+            background url("../images/26.png") no-repeat
+            background-position 88% 82%
+        &:nth-child(5)
+            background url("../images/27.png") no-repeat
+            background-position 63% 17%
+    &_btn
+      position relative
+      margin-top 22px
+      margin-bottom 10px
+      padding 22px 31px
+      center-x()
+  .feadback
+    position relative
+    max_width()
+    pad_content()
+    &_form
+      display grid
+      display -ms-grid
+      grid-template-columns 1fr 1fr
+      grid-template-rows auto auto 90px
+      -ms-grid-columns  1fr w_gatter 1fr
+      -ms-grid-rows auto w_gatter auto w_gatter 90px
+      grid-gap 30px
+      max-width 770px
+      margin 0 auto
+      padding 20px 20px 10px
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+      > div:nth-child(2)
+        -ms-grid-row 1
+        -ms-grid-column 3
+      > div:nth-child(3)
+        grid-column 1/-1
+        grid-row 2
+        -ms-grid-row 3
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+      > button
+        grid-column 1/-1
+        grid-row 3
+        -ms-grid-row 5
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+        width 235px
+        margin 29px auto 0
+
+    &_circle-btn
+      position absolute
+      bottom -34px
+      width 135px
+      height 77px
+      center-x()
+      padding-bottom 42px
+      text-transform uppercase
+      box-sizing border-box
+      &__text
+        position absolute
+        bottom 16px
+        width 100%
+        text-align center
+        font-size 12px
+        letter-spacing 0
+.footer
+  padding 73px 20px
+  &_block
+    display flex
+    justify-content space-around
+    align-content center
+    padding-top 55px
+    padding-bottom 13px
+    max_width()
+  .contacts
+    width 200px
+    padding-top 20px
+    text-align right
+    font-weight bold
+    color c_acc-cont
+    &_tel
+      margin-left 7px
+      letter-spacing 1.4px
+    .fa-phone
+      transform rotate(90deg)
+      color c_acc-cont
+      font-size 11px
+      line-height 1
+    &_mail
+      display block
+      font-size 14px
+      line-height 1.7
+      letter-spacing 1.4px
+      text-transform uppercase
+  .logo
+    position relative
+    z-index 2
+    display block
+    width 305px
+    margin 0 20px
+    &:before
+      content ""
+      position absolute
+      top 0
+      left 0
+      width 274px
+      height 85px
+      background url(../images/logo.png) no-repeat center
+      background-size contain
+      z-index 3
+    &_name
+      margin-left -44px
+      font-family f_acc
+      font-size 45px
+      line-height .7
+      text-align center
+      color c_cont
+      letter-spacing 0
+      &__bottom
+        margin-left 18px
+        letter-spacing 0
+        line-height .4
+    &_type
+      margin-top 18px
+      margin-left -31px
+      font-size 12px
+      text-align center
+      text-transform uppercase
+      letter-spacing 1.8px
+      color c_acc-cont
+  .location
+    width 170px
+    padding-top 20px
+    text-transform uppercase
+    color c_acc-cont
+  .social-networks
+    text-align center
+    padding 55px 20px 40px
+    &_item
+      width 40px
+      height 40px
+      margin 5px
+      border-radius 100%
+      background c_acc-cont
+      text-align center
+      &:before
+        position relative
+        top 14px
+        left 2px
+        color #fff
+      &:hover
+        background c_acc
+        trans()
+  &_bottom
+    padding 10px 20px
+    letter-spacing 0
+    text-align center
+    a
+      color #000
+      margin 0 5px
+      text-decoration underline
+
+@media all and (max-width w_lg)
+  .main
+    .book
+      height auto
+      background-position 50% 51%
+      background-size cover
+    .introduction
+      .introduction_content__img
+        background-size cover
+@media all and (max-width w_md)
+  .header_nav__item
+    padding 0 17px
+  .main
+    .event
+      .plans-wrap
+        grid-template-columns 1fr 1fr
+        -ms-grid-columns 1fr auto 1fr
+        &_center
+          display none
+@media all and (max-width w_sm)
+  .header
+    &_nav
+      display none
+      &__item
+        padding 10px 10px
+    .mobile-menu
+      position absolute
+      top 0
+      right -100%
+      z-index 9998
+      display block!important
+      max-width 500px
+      width 100%
+      height 100vh
+      background #fff
+      transition 0.6s ease
+      opacity 0
+      ul
+        position relative
+        top 50%
+        padding 0
+        transform translateY(-50%)
+        li
+          list-style: none
+          a
+            position relative
+            display block
+            width 100%
+            margin 0 auto
+            text-align center
+            text-decoration none
+            font-size 21px
+            line-height 39px
+            text-transform uppercase
+            overflow hidden
+            &:after
+              position absolute
+              right -100%
+              top 0
+              z-index -1
+              width 100%
+              height 100%
+              content ''
+              background c_gray-text
+              transition 0.4s ease
+            &:hover
+              color #ffffff
+              background c_acc
+              &:after
+                right 0
+
+      &--open
+        right 0
+        opacity 1
+    .mobile-nav-button
+      position absolute
+      right 0
+      top 0
+      z-index 9999
+      display inherit!important
+      width 35px
+      height 30px
+      margin 1rem 2rem
+      cursor pointer
+      &__line
+        position relative
+        width 100%
+        height 1px
+        background c_grey
+        transition 1s ease
+        &:nth-of-type(2)
+          margin 0.5rem 0
+        &--1
+          position absolute
+          top 13px
+          transform rotate(45deg)
+        &--2
+          display none
+        &--3
+          position absolute
+          top 13px
+          transform rotate(135deg)
+    &_block
+      align-items center
+      display grid
+      display -ms-grid
+      grid-template-columns 1fr 1fr
+      grid-template-rows 1fr 1fr
+      -ms-grid-columns 1fr w_gatter 1fr
+      -ms-grid-rows 1fr w_gatter 1fr
+      grid-gap w_gatter
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+        -ms-grid-column-span 1
+        grid-row 1
+        grid-column 1
+        width 100%
+      > div:nth-child(3)
+        -ms-grid-row 1
+        -ms-grid-column 3
+        -ms-grid-column-span 1
+        grid-row 1
+        grid-column 2
+        width 100%
+      .logo
+        -ms-grid-row 3
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+        grid-row 2
+        grid-column 1/-1
+        width 100%
+        &:before
+          width 100%
+        &_name
+          margin 0
+          font-size 40px
+        &_type
+          margin 18px 0 0
+      .contacts
+        width 30%
+        padding-left 10px
+        &_mail
+          font-size 13px
+      .cart
+        width 30%
+        padding-right 10px
+  .main
+    .flexslider
+      .slider
+        &_content
+          &:before
+            height 130px
+          &__headline
+            font-size 40px
+    .welcome
+      .three-blocks
+        grid-template-columns 1fr
+        -ms-grid-columns  1fr
+        -ms-grid-rows auto w_gatter auto  w_gatter auto
+        max-width 400px
+        margin 0 auto
+        &_item
+          &--events
+            -ms-grid-row 1
+            -ms-grid-column 1
+          &--food
+            -ms-grid-row 3
+            -ms-grid-column 1
+          &--venues
+            -ms-grid-row 5
+            -ms-grid-column 1
+    .introduction
+      &_content
+        display block
+    .menu
+      &-items
+        grid-template-columns 1fr 1fr
+        -ms-grid-columns 1fr w_gatter 1fr
+        -ms-grid-rows auto w_gatter auto
+        > div:nth-child(1)
+          -ms-grid-row 1
+          -ms-grid-column 1
+        > div:nth-child(2)
+          -ms-grid-row 1
+          -ms-grid-column 3
+        > div:nth-child(3)
+          -ms-grid-row 3
+          -ms-grid-column 1
+        > div:nth-child(4)
+          -ms-grid-row 3
+          -ms-grid-column 3
+    .book
+      &_btn
+        font-size 14px
+        padding 17px 27px
+    .reviews-slides
+      &_content
+        padding 20px 50px
+        font-size 16px
+    .blog
+      &-items
+        flex-direction column
+        &_item
+          margin 25px 0
+    .gallery-block
+      .gallery
+        grid-template-columns 1fr 1fr
+        grid-template-rows  250px 250px 250px
+        -ms-grid-columns 1fr w_gatter 1fr
+        -ms-grid-rows 250px w_gatter 250px w_gatter 250px
+        &_photoset
+          &:nth-child(3)
+            grid-row 2
+            grid-column 1/-1
+            -ms-grid-row 3
+            -ms-grid-column 1
+            -ms-grid-column-span 3
+            -ms-grid-row-span 1
+          &:nth-child(4)
+            -ms-grid-row 5
+            -ms-grid-column 1
+          &:nth-child(5)
+            -ms-grid-row 5
+            -ms-grid-column 3
+  .footer
+    &_block
+      display flex
+      flex-direction column
+      align-items center
+      text-align center
+      padding-top 0
+    .logo
+      margin 40px 20px
+      &_name
+        margin-left -20px
+      &:before
+        width 100%
+      &_type
+        margin-left 0
+    .contacts
+      text-align center
+@media all and (max-width w_xl)
+  header .header
+    &_block
+      grid-template-rows auto auto auto
+      -ms-grid-rows auto w_gatter auto w_gatter auto
+      > div:nth-child(1)
+        -ms-grid-row 1
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+        grid-row 1
+        grid-column 1/-1
+        text-align center
+      > .logo
+        -ms-grid-row 5
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+        grid-row 3
+        grid-column 1/-1
+        width 100%
+      > div:nth-child(3)
+        -ms-grid-row 3
+        -ms-grid-column 1
+        -ms-grid-column-span 3
+        grid-row 2
+        grid-column 1/-1
+        text-align center
+
+  #main.main
+    .flexslider
+      .slider
+        &_content
+          &:before
+            height 130px
+          &__headline
+            font-size 20px
+            letter-spacing 3px
+            margin-top 17px
+            &:before
+              bottom 10px
+              width 70px
+              height 1px
+            &:after
+              top 10px
+              width 70px
+              height 1px
+          &__btn
+            margin-top 20px
+    .introduction
+      &_content
+        &__text
+          padding 20px
+      &--chef
+        .chef_text
+          padding-top 20px
+          &__btn
+            margin-top 20px
+    .about-us_text__btn
+      padding 10px 15px
+      margin-top 25px
+    .menu
+      &-items
+        grid-template-columns 1fr
+        -ms-grid-columns 1fr
+        -ms-grid-rows auto w_gatter auto w_gatter auto w_gatter auto
+        > div:nth-child(1)
+          -ms-grid-row 1
+          -ms-grid-column 1
+        > div:nth-child(2)
+          -ms-grid-row 3
+          -ms-grid-column 1
+        > div:nth-child(3)
+          -ms-grid-row 5
+          -ms-grid-column 1
+        > div:nth-child(4)
+          -ms-grid-row 7
+          -ms-grid-column 1
+        &_item__img
+          background-size cover
+      &_other
+        font-size 16px
+    .event
+      .plans-wrap
+        grid-template-columns 1fr
+        -ms-grid-columns 1fr
+        -ms-grid-row 1fr 1fr
+        &_center
+          display none
+        .plan
+          &_number
+            font-size 30px
+        &_left
+          -ms-grid-row 1
+          -ms-grid-column 1
+          -ms-grid-column-span 1
+          .plan
+            padding-right 0
+            &_headline
+              padding-right 50px
+        &_right
+          -ms-grid-row 2
+          -ms-grid-column 1
+          -ms-grid-column-span 1
+          .plan
+            padding-left 0
+            &_headline
+              padding-left  50px
+    .gallery-block
+      .gallery
+        grid-template-columns 1fr
+        grid-template-rows  250px 250px 250px 250px 250px
+        -ms-grid-columns 1fr
+        -ms-grid-rows 250px w_gatter 250px w_gatter 250px w_gatter 250px w_gatter 250px
+        &_photoset
+          &:nth-child(1)
+            -ms-grid-row 1
+            -ms-grid-column 1
+          &:nth-child(2)
+            -ms-grid-row 3
+            -ms-grid-column 1
+          &:nth-child(3)
+            grid-row 3
+            grid-column 1
+            -ms-grid-row 5
+            -ms-grid-column 1
+            -ms-grid-column-span 1
+          &:nth-child(4)
+            -ms-grid-row 7
+            -ms-grid-column 1
+          &:nth-child(5)
+            -ms-grid-row 9
+            -ms-grid-column 1
+    .book
+      .headline
+        &_text
+          font-size 30px
+        &:after
+          top 20px
+          height 1px
+    .feadback
+      &_form
+        display flex
+        flex-direction column
+        > div
+          margin-bottom w_gatter
+        > button
+           margin-top 10px
+      &_circle-btn
+        bottom -14px
+        width 116px
+        height 43px
+        padding-bottom 42px
+        &:before
+          top 10px
+        &__text
+          bottom 0
+          font-size 12px

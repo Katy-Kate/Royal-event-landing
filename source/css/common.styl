@@ -1,0 +1,265 @@
+//------------------colors-------------//
+
+c_main = #f3f1ec
+c_grey = #929292
+c_acc-cont = #808369
+c_cont =  #434343
+c_acc = #ffb18b
+
+
+
+
+//---------------------responsive------------//
+w_lg = 1200px
+w_md = 992px
+w_sm = 768px
+w_xl = 599px
+w_xs = 465px
+w_cont = 1170px
+w_gatter = 30px
+
+//-------------------- mixins ----//
+max_width()
+  width 100%
+  max-width w_cont
+  margin 0 auto
+
+pad_content()
+  padding 100px 20px
+  box-sizing border-box
+
+mask()
+  content ""
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(35, 35, 35, 0.38)
+center-x()
+  left 50%
+  transform translateX(-50%)
+center-y()
+  top 50%
+  transform translateY( -50%)
+
+trans()
+  transition all .5s ease
+//------------fonts------------------------//
+f_main =  'PTSerif'
+f_acc = 'Yellowtail'
+
+
+
+
+//----------------common styles----------//
+.clearfix:before
+.clearfix:after
+  content ' '
+  display table
+
+.clearfix:after
+  clear both
+
+
+html
+  //background url(../images/work.png) no-repeat
+  //background-position 50% 0
+  //z-index 9999
+  position relative
+  overflow-x hidden
+
+body
+  //opacity .5
+  overflow-x hidden
+  font-family f_main
+  font-size 14px
+  min-width 320px
+  margin 0
+  letter-spacing 1px
+  color #000
+
+.grey-block
+  position relative
+  background c_main
+
+h2
+.h2
+  font-size 1.5rem
+  padding .6em 0
+
+h3
+  font-size 23px
+  color c_acc-cont
+  margin 1em 0
+  text-align center
+  letter-spacing 0
+  line-height 1.5
+
+
+a
+  color c_acc-cont
+  text-decoration none
+  cursor pointer
+  &:hover:not(.btn)
+    color  c_acc
+    trans()
+
+
+input
+textarea
+  width 100%
+  border none
+  background rgba(255, 255, 255, 0.8)
+  letter-spacing 1.9px
+  text-transform uppercase
+  box-sizing border-box
+  outline none
+
+input
+  padding 28px 42px
+textarea
+  height 200px
+  padding 22px 42px
+
+
+.btn
+button
+  display inline-block
+  color #fff
+  text-transform uppercase
+  background c_acc
+  border none
+  cursor pointer
+  &:hover
+    background lighten(c_acc, 40%)
+    trans()
+  &--lg
+    padding 27px 63px
+    font-size 16px
+    letter-spacing 2px
+  &--md
+    padding 21px 54px
+    font-size 14px
+    letter-spacing 2px
+.circle-btn
+  display block
+  margin 0 auto
+  text-align center
+  background #fff
+  border-radius  50% 50% 0 0 / 100% 100% 0 0
+  cursor pointer
+  &--lg
+    width 116px
+    height 43px
+    &:before
+      position relative
+      top 76%
+  &--md
+    width 84px
+    height 34px
+    &:before
+      position relative
+      top 69%
+  &--sm
+    width 43px
+    height 17px
+    &:before
+      position relative
+      top 55%
+.headline
+  position relative
+  max-width 400px
+  padding 7px 20px 80px
+  margin 0 auto
+  text-align center
+  &_top
+    font-size 14px
+    text-align center
+    text-transform uppercase
+    letter-spacing 2px
+  &_text
+    margin-top 12px
+    font-weight bold
+    font-size 36px
+    line-height 1.2
+    letter-spacing -0.4px
+  &:before
+    content ""
+    position absolute
+    top 0
+    left 50%
+    transform translateX(-50%)
+    z-index 3
+    width 63%
+    height 55%
+    background url(../images/headline.png) no-repeat center
+    background-size contain
+    opacity .2
+  &:after
+    content ""
+    position relative
+    top 40px
+    display block
+    width 112px
+    height 2px
+    background-color c_acc-cont
+    margin 0 auto
+
+@media all and (max-width w_sm)
+  .btn
+  button
+    display inline-block
+    color #fff
+    text-transform uppercase
+    background c_acc
+    border none
+    cursor pointer
+    &:hover
+      background lighten(c_acc, 40%)
+      trans()
+    &--lg
+      padding 20px 30px
+      font-size 14px
+      letter-spacing 2px
+    &--md
+      padding 17px 27px
+      font-size 12px
+      letter-spacing 2px
+  .circle-btn
+    &--lg
+      width 90px
+      height 30px
+    &--md
+      width 76px
+      height 30px
+
+@media all and (max-width w_xl)
+  h3
+    font-size 18px
+  .btn
+  button
+    &--lg
+      padding 10px 20px!important
+      font-size 14px
+      letter-spacing 1px
+    &--md
+      padding 10px 15px!important
+      font-size 12px
+      letter-spacing 1px
+  .circle-btn
+    &--lg
+      width 60px
+      height 20px
+    &--md
+      width 76px
+      height 30px
+
+  .headline
+    font-size 32px
+    padding 5px 10px 40px
+    &:after
+      top 20px
+      height 1px
+    &_text
+      font-size 30px

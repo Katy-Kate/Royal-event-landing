@@ -1,0 +1,83 @@
+
+/* Slider */
+.slick-loading .slick-list
+  background #fff url('../images/ajax-loader.gif') center center no-repeat
+
+
+/* Arrows */
+.slick-prev
+.slick-next
+  z-index 1
+  font-size 0
+  line-height 0
+  position absolute
+  top 61%
+  display block
+  width 30px
+  height 63px
+  padding 0
+  transform translate(0, -50%)
+  cursor pointer
+  color c_acc-cont
+  border none
+  outline none
+  background c_main
+
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+  opacity .25;
+
+
+.slick-prev:before,
+.slick-next:before
+  font-family "FontAwesome"
+  font-size 20px
+  line-height 1
+  opacity .75
+  color white
+
+.slick-prev
+  left 0
+  border-radius 0 100% 100% 0 / 0 50% 50% 0
+
+.slick-prev:before
+  content '\f104'
+  left 0
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+
+.slick-next
+  right 0
+  border-radius 100% 0 0 100% / 50% 0 0 50%
+
+.slick-next:before
+  content '\f105'
+  right 0
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+
+/* Dots */
+.slick-dotted.slick-slider
+  margin-bottom 30px
+
+.slick-dots
+  position absolute
+  bottom -25px
+  display block
+  width 100%
+  padding 0
+  margin 0
+  list-style none
+  text-align center
+
+
+@media all and (max-width w_sm)
+  .slick-prev
+  .slick-next
+    width 20px
+    height 50px
