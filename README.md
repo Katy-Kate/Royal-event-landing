@@ -12,8 +12,7 @@ $ npm i -g gulp
 
 ```sh
 $ git clone [https://github.com/Katy-Kate/Royal-event-landing-.git]
-$ cd forte
-$ npm i -d
+$ npm i 
 $ gulp (if you want to change something)
 ```
 
