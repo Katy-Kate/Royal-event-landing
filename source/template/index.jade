@@ -1,9 +1,8 @@
 doctype
-html
-    head(lang="en")
+html(lang="en")
+    head
         title #{title} - My Site
         meta(name="viewport" content="width=device-width")
-        link(href="https://necolas.github.io/normalize.css/latest/normalize.css")
         link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
@@ -70,17 +69,17 @@ html
                     a.slider_content__btn.btn.btn--lg(href="#") order service
                 a.flexslider_circle-btn.circle-btn.circle-btn--lg.fas.fa-angle-down(href="#welcome")
             #welcome.welcome
-                .animated.bounceInLeft.welcome_headline.headline
+                .welcome_headline.headline
                     h2.headline_top catering
                     .headline_text Welcome to the Best  Catering Company
                 #pages.three-blocks
-                    .three-blocks_item.three-blocks_item--events
+                    .three-blocks_item.three-blocks_item--events.bounce-Left
                         .three-blocks_item__name Events
                         a(href="#").three-blocks_item__btn.circle-btn.circle-btn--md.fas.fa-angle-down
-                    .three-blocks_item.three-blocks_item--food
+                    .three-blocks_item.three-blocks_item--food.bounce-Up.delay-1
                         .three-blocks_item__name Food & Drinks
                         a(href="#").three-blocks_item__btn.circle-btn.circle-btn--md.fas.fa-angle-down
-                    .three-blocks_item.three-blocks_item--venues
+                    .three-blocks_item.three-blocks_item--venues.bounce-Right.delay-2
                         .three-blocks_item__name Venues
                         a(href="#").three-blocks_item__btn.circle-btn.circle-btn--md.fas.fa-angle-down
                 a.welcome_btn.btn.btn--md(href="#") More about us
@@ -89,8 +88,8 @@ html
                     h2.headline_top About Us
                     .headline_text A Short Story About Our Company
                 .introduction_content
-                    .introduction_content__img.introduction_content__img--about-us
-                    .introduction_content__text
+                    .introduction_content__img.introduction_content__img--about-us.bounce-Left
+                    .introduction_content__text.bounce-Right.delay-1
                         h3.about-us_headline A Perfect Blend of Sensational Food,  Inspiring Ideas and Professional Staff
                         span.about-us_date 1997
                         p.about-us_text.
@@ -108,21 +107,20 @@ html
                     .menu_headline.headline
                         h2.headline_top catering
                         .headline_text Our Menu
-
                     .menu-items
-                        .menu-items_item
+                        .menu-items_item.bounce-Left.delay-1
                             .menu-items_item__img.menu-items_item__img--canapes
                             .menu-items_item__name Canapes
                             a(href="#").menu-items_item__btn.circle-btn.circle-btn--sm.fas.fa-angle-down
-                        .menu-items_item
+                        .menu-items_item.bounce-Left
                             .menu-items_item__img.menu-items_item__img--plates
                             .menu-items_item__name small plates
                             a(href="#").menu-items_item__btn.circle-btn.circle-btn--sm.fas.fa-angle-down
-                        .menu-items_item
+                        .menu-items_item.bounce-Right.delay-2
                             .menu-items_item__img.menu-items_item__img--sweets
                             .menu-items_item__name sweets
                             a(href="#").menu-items_item__btn.circle-btn.circle-btn--sm.fas.fa-angle-down
-                        .menu-items_item
+                        .menu-items_item.bounce-Right.delay-3
                             .menu-items_item__img.menu-items_item__img--drinks
                             .menu-items_item__name drinks
                             a(href="#").menu-items_item__btn.circle-btn.circle-btn--sm.fas.fa-angle-down
@@ -142,30 +140,30 @@ html
                             h5.plan_headline weddings
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 01
-                        .plan
+                        .plan.delay-1
                             h5.plan_headline corporate
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 02
-                        .plan
+                        .plan.delay-2
                             h5.plan_headline socials
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 03
-                    .plans-wrap_center
+                    .plans-wrap_center.delay-6.fade
                         .event_center__img
                     .plans-wrap_right
-                        .plan
+                        .plan.delay-3
                             h5.plan_headline picnics
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 04
-                        .plan
+                        .plan.delay-4
                             h5.plan_headline festivals
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 05
-                        .plan
+                        .plan.delay-5
                             h5.plan_headline private Paties
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 06
-                a.event_btn.btn.btn--md(href="#") more services
+                a.event_btn.btn.btn--md.delay-2(href="#") more services
             .book
                 .book_headline.headline
                     h2.headline_top book today!
@@ -192,28 +190,26 @@ html
                     .headline_text Recent Articles
 
                 .blog-items
-                    .blog-items_item
+                    .blog-items_item.bounce-Left
                         .blog-items_item__img.blog-items_item__img--location
                         .blog-items_item__date jun 20,2016
                         h4.blog-items_item__headline We Can Help Find a Location That's Right for You
-                    .blog-items_item
+                    .blog-items_item.bounce-Up.delay-1
                         .blog-items_item__img.blog-items_item__img--services
                         .blog-items_item__date jun 20,2016
                         h4.blog-items_item__headline Catering Services for  Fabulous Corporate Events
-                    .blog-items_item
+                    .blog-items_item.bounce-Right.delay-2
                         .blog-items_item__img.blog-items_item__img--menu
                         .blog-items_item__date jun 20,2016
                         h4.blog-items_item__headline Planning a Wedding Menu Can Be Daunting
                 a.blog_btn.btn.btn--md(href="#") more articles
-
-
             .introduction.introduction--chef
                 .introduction_headline.headline
                     h2.headline_top chef
                     .headline_text Who’s Behind Great Service?
                 .introduction_content.chef
-                    .introduction_content__img.introduction_content__img--chef
-                    .introduction_content__text.chef_text
+                    .introduction_content__img.introduction_content__img--chef.bounce-Left
+                    .introduction_content__text.chef_text.bounce-Right.delay-1
                         p.chef_text__content.
                             Lorem ipsum dolor sit amet, consecte adipiscing elit, sed
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -231,21 +227,20 @@ html
                     .staff_headline.headline
                         h2.headline_top staff
                         .headline_text Meet the Team
-
                     .staff
-                        .staff_item
+                        .staff_item.bounce-Left.delay-2
                             .staff_item__img.staff_item__img--amanda
                             .staff_item__name Amanda Finch
                             .staff_item__position Chef, Co-Founder
-                        .staff_item
+                        .staff_item.bounce-Left
                             .staff_item__img.staff_item__img--joseph
                             .staff_item__name Joseph Verder
                             .staff_item__position Chef
-                        .staff_item
+                        .staff_item.bounce-Right.delay-1
                             .staff_item__img.staff_item__img--anthony
                             .staff_item__name Anthony Mann
                             .staff_item__position Waiter
-                        .staff_item
+                        .staff_item.bounce-Right.delay-3
                             .staff_item__img.staff_item__img--julia
                             .staff_item__name Julia Green
                             .staff_item__position Waitress
@@ -255,15 +250,15 @@ html
                     .headline_text Check Our Recent  Projects
                 .gallery.row
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(1)" alt="").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(1)" src="" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(2)" alt="").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(2)" src="" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(3)" alt="").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(3)" src="" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(4)" alt="").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(4)" src="" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(5)" alt="").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(5)" src="" alt="").hover-shadow.cursor.demo
                 #myModal.modal
                     span.close.cursor(onclick="closeModal()") &times;
                     .modal-content
@@ -284,27 +279,20 @@ html
                             img(src="images/27.png" alt="")
                         a.prev(onclick="plusSlides(-1)") &#10094;
                         a.next(onclick="plusSlides(1)") &#10095;
-
-
-
-
                 a.gallery-block_btn.btn.btn--md(href="#") view more projects
-
-
             #contacts.grey-block
                 .feadback
                     .feadback_headline.headline
                         h2.headline_top contact us
                         .headline_text Leave a Feadback or Ask a Question
-
-                    form.feadback_form
+                    form.feadback_form(action="/action_page.php" method="post")
                         .feadback_form-group
                             input(type="text"  placeholder="Your name:")
                         .feadback_form-group
                             input(type="email" aria-describedby="emailHelp" placeholder="e-mail address:")
                         .feadback_form-group
                             textarea(rows="3" placeholder="send a message:")
-                        button(type="submit").feadback_btn.btn.btn--md send message
+                        input(type="submit" value="send message").feadback_btn.btn.btn--md
                 a.feadback_circle-btn.circle-btn.circle-btn--lg.fas.fa-angle-up(href="#header")
                     .feadback_circle-btn__text top
         footer.footer
@@ -322,9 +310,9 @@ html
 
             .social-networks
                 a(href="#").social-networks_item.fab.fa-twitter
-                a(href="#").social-networks_item.fab.fa-facebook-f
-                a(href="#").social-networks_item.fab.fa-tumblr
-                a(href="#").social-networks_item.fab.fa-instagram
+                a(href="#").social-networks_item.fab.fa-facebook-f.delay-1
+                a(href="#").social-networks_item.fab.fa-tumblr.delay-2
+                a(href="#").social-networks_item.fab.fa-instagram.delay-3
             .footer_bottom Ancora © 2016 All Rights Reserved
                 a(href="#") Terms of Use
                 span and

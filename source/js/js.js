@@ -73,10 +73,30 @@ $(document).ready()
     });
      //---------appearance of content during page loading
 
-        // jQuery('.headline').addClass("hidden").viewportChecker({
-        //     classToAdd: 'visible animated fadeIn',
-        //     offset: 100
-        // });
+        $('.headline').addClass("fade");
+        $('.btn').addClass("fade");
+        $('.plan').addClass("fade");
+        $('.gallery_photoset').addClass("fade");
+        $('input').addClass("fade");
+        $('.social-networks_item').addClass("bounce-Right");
+
+
+        $('.fade').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+            offset: 100
+        });
+        $('.bounce-Left').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+            offset: 100
+        });
+        $('.bounce-Right').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInRight', // Class to add to the elements when they are visible
+            offset: 100
+        });
+        $('.bounce-Up').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+            offset: 100
+        });
 
     //---------
 };
