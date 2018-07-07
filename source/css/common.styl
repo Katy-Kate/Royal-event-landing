@@ -10,6 +10,7 @@ c_acc = #ffb18b
 
 
 //---------------------responsive------------//
+w_biggest = 1320px
 w_lg = 1200px
 w_md = 992px
 w_sm = 768px
@@ -25,8 +26,10 @@ max_width()
   margin 0 auto
 
 pad_content()
-  padding 100px 20px
+  padding 100px 0
   box-sizing border-box
+  @media all and (max-width w_cont)
+    padding 50px 20px!important
 
 mask()
   content ""
@@ -61,11 +64,16 @@ f_acc = 'Yellowtail'
 .clearfix:after
   clear both
 
+.hidden
+  opacity 0
+
+.visible
+  opacity 1
 
 html
   //background url(../images/work.png) no-repeat
   //background-position 50% 0
-  //z-index 9999
+  z-index 9999
   position relative
   overflow-x hidden
 
@@ -82,11 +90,6 @@ body
 .grey-block
   position relative
   background c_main
-
-h2
-.h2
-  font-size 1.5rem
-  padding .6em 0
 
 h3
   font-size 23px
@@ -117,10 +120,10 @@ textarea
   outline none
 
 input
-  padding 28px 42px
+  padding 24px 42px
 textarea
-  height 200px
-  padding 22px 42px
+  height 210px
+  padding 25px 42px
 
 
 .btn
@@ -162,8 +165,8 @@ button
       position relative
       top 69%
   &--sm
-    width 43px
-    height 17px
+    width 36px
+    height 16px
     &:before
       position relative
       top 55%
@@ -205,6 +208,8 @@ button
     height 2px
     background-color c_acc-cont
     margin 0 auto
+
+
 
 @media all and (max-width w_sm)
   .btn
@@ -263,3 +268,5 @@ button
       height 1px
     &_text
       font-size 30px
+
+

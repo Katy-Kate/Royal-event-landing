@@ -1,17 +1,20 @@
 doctype
 html
-    head
+    head(lang="en")
         title #{title} - My Site
         meta(name="viewport" content="width=device-width")
         link(href="https://necolas.github.io/normalize.css/latest/normalize.css")
         link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
         link(rel='stylesheet', href='css/main.css')
         link(rel='stylesheet', href='css/gallery.css')
         script(src="js/jquery-11.0.min.js")
 
+
     body
         header#header.header.clearfix
+            .preloader
             .header_nav
                 a.header_nav__item.header_nav__item--active.fas.fa-home(href="#")
                 a.header_nav__item(href="#about-us") About us
@@ -55,20 +58,20 @@ html
             .flexslider
                 ul.slides
                     li
-                        img(src="images/slide1.png")
+                        img(src="images/slide1.png" alt="")
                     li
-                        img(src="images/slide1.png")
+                        img(src="images/slide1.png" alt="")
                     li
-                        img(src="images/slide1.png")
+                        img(src="images/slide1.png" alt="")
                     li
-                        img(src="images/slide1.png")
+                        img(src="images/slide1.png" alt="")
                 .slider_content
-                    .slider_content__headline A perfect  blend of sensation food
+                    h1.slider_content__headline A perfect  blend of sensation food
                     a.slider_content__btn.btn.btn--lg(href="#") order service
                 a.flexslider_circle-btn.circle-btn.circle-btn--lg.fas.fa-angle-down(href="#welcome")
             #welcome.welcome
-                .welcome_headline.headline
-                    .headline_top catering
+                .animated.bounceInLeft.welcome_headline.headline
+                    h2.headline_top catering
                     .headline_text Welcome to the Best  Catering Company
                 #pages.three-blocks
                     .three-blocks_item.three-blocks_item--events
@@ -83,7 +86,7 @@ html
                 a.welcome_btn.btn.btn--md(href="#") More about us
             #about-us.introduction.introduction--about-us
                 .introduction_headline.headline
-                    .headline_top About Us
+                    h2.headline_top About Us
                     .headline_text A Short Story About Our Company
                 .introduction_content
                     .introduction_content__img.introduction_content__img--about-us
@@ -103,7 +106,7 @@ html
             #menu.grey-block
                 .menu
                     .menu_headline.headline
-                        .headline_top catering
+                        h2.headline_top catering
                         .headline_text Our Menu
 
                     .menu-items
@@ -130,83 +133,83 @@ html
 
             #services.event
                 .event_headline.headline
-                    .headline_top services
+                    h2.headline_top services
                     .headline_text Planning a Fabulous  Event?
 
                 .plans-wrap
                     .plans-wrap_left
                         .plan
-                            .plan_headline weddings
+                            h5.plan_headline weddings
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 01
                         .plan
-                            .plan_headline corporate
+                            h5.plan_headline corporate
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 02
                         .plan
-                            .plan_headline socials
+                            h5.plan_headline socials
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 03
                     .plans-wrap_center
                         .event_center__img
                     .plans-wrap_right
                         .plan
-                            .plan_headline picnics
+                            h5.plan_headline picnics
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 04
                         .plan
-                            .plan_headline festivals
+                            h5.plan_headline festivals
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 05
                         .plan
-                            .plan_headline private Paties
+                            h5.plan_headline private Paties
                             .plan_text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                             .plan_number 06
                 a.event_btn.btn.btn--md(href="#") more services
             .book
                 .book_headline.headline
-                    .headline_top book today!
+                    h2.headline_top book today!
                     .headline_text Book Your Tasting Session or Discuss Your Project
                 a.book_btn.btn.btn--md(href="#") send free request
 
             .grey-block
                 .reviews
                     .reviews_headline.headline
-                        .headline_top testimionials
+                        h2.headline_top testimionials
                         .headline_text Clients About Us
                     .carousel.clearfix
                         .reviews-slides
                             .reviews-slides_img
-                            .reviews-slides_content "Having worked with a number of caterers over the years, their level of service was notablyhigh and they were integral to making the day a succes".
+                            .reviews-slides_content "Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a succes".
                             .reviews-slides_name laura & Adam Ashley, NY
                         .reviews-slides
                             .reviews-slides_img
-                            .reviews-slides_content "Having worked with a number of caterers over the years, their level of service was notablyhigh and they were integral to making the day a succes".
+                            .reviews-slides_content "Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a succes".
                             .reviews-slides_name laura & Adam Ashley, NY
             #blog.blog
                 .blog_headline.headline
-                    .headline_top blog
+                    h2.headline_top blog
                     .headline_text Recent Articles
 
                 .blog-items
                     .blog-items_item
                         .blog-items_item__img.blog-items_item__img--location
                         .blog-items_item__date jun 20,2016
-                        .blog-items_item__headline We Can Help Find a Location That's Right for You
+                        h4.blog-items_item__headline We Can Help Find a Location That's Right for You
                     .blog-items_item
                         .blog-items_item__img.blog-items_item__img--services
                         .blog-items_item__date jun 20,2016
-                        .blog-items_item__headline Catering Services for  Fabulous Corporate Events
+                        h4.blog-items_item__headline Catering Services for  Fabulous Corporate Events
                     .blog-items_item
                         .blog-items_item__img.blog-items_item__img--menu
                         .blog-items_item__date jun 20,2016
-                        .blog-items_item__headline Planning a Wedding Menu Can Be Daunting
+                        h4.blog-items_item__headline Planning a Wedding Menu Can Be Daunting
                 a.blog_btn.btn.btn--md(href="#") more articles
 
 
             .introduction.introduction--chef
                 .introduction_headline.headline
-                    .headline_top chef
+                    h2.headline_top chef
                     .headline_text Who’s Behind Great Service?
                 .introduction_content.chef
                     .introduction_content__img.introduction_content__img--chef
@@ -226,7 +229,7 @@ html
             .grey-block
                 .staff-wrapper
                     .staff_headline.headline
-                        .headline_top staff
+                        h2.headline_top staff
                         .headline_text Meet the Team
 
                     .staff
@@ -248,37 +251,37 @@ html
                             .staff_item__position Waitress
             #gallery.gallery-block
                 .gallery-block_headline.headline
-                    .headline_top gallery
+                    h2.headline_top gallery
                     .headline_text Check Our Recent  Projects
                 .gallery.row
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(1)").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(1)" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(2)").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(2)" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(3)").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(3)" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(4)").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(4)" alt="").hover-shadow.cursor.demo
                     .gallery_photoset.column
-                        img(onclick="openModal();currentSlide(5)").hover-shadow.cursor.demo
+                        img(onclick="openModal();currentSlide(5)" alt="").hover-shadow.cursor.demo
                 #myModal.modal
                     span.close.cursor(onclick="closeModal()") &times;
                     .modal-content
                         .mySlides
                             .numbertext 1 / 5
-                            img(src="images/23.png" style="width:100%")
+                            img(src="images/23.png" alt="")
                         .mySlides
                             .numbertext 2 / 5
-                            img(src="images/24.png" style="width:100%")
+                            img(src="images/24.png" alt="")
                         .mySlides
                             .numbertext 3 / 5
-                            img(src="images/25.png" style="width:100%")
+                            img(src="images/25.png" alt="")
                         .mySlides
                             .numbertext 4 / 5
-                            img(src="images/26.png" style="width:100%")
+                            img(src="images/26.png" alt="")
                         .mySlides
                             .numbertext 5 / 5
-                            img(src="images/27.png" style="width:100%")
+                            img(src="images/27.png" alt="")
                         a.prev(onclick="plusSlides(-1)") &#10094;
                         a.next(onclick="plusSlides(1)") &#10095;
 
@@ -291,16 +294,16 @@ html
             #contacts.grey-block
                 .feadback
                     .feadback_headline.headline
-                        .headline_top contact us
+                        h2.headline_top contact us
                         .headline_text Leave a Feadback or Ask a Question
 
                     form.feadback_form
                         .feadback_form-group
-                            input(type="text"  placeholder="Your name:")#InputName
+                            input(type="text"  placeholder="Your name:")
                         .feadback_form-group
-                            input(type="email" aria-describedby="emailHelp" placeholder="e-mail address:")#InputEmail1
+                            input(type="email" aria-describedby="emailHelp" placeholder="e-mail address:")
                         .feadback_form-group
-                            textarea(rows="3" placeholder="send a message:")#Textarea
+                            textarea(rows="3" placeholder="send a message:")
                         button(type="submit").feadback_btn.btn.btn--md send message
                 a.feadback_circle-btn.circle-btn.circle-btn--lg.fas.fa-angle-up(href="#header")
                     .feadback_circle-btn__text top
@@ -326,6 +329,7 @@ html
                 a(href="#") Terms of Use
                 span and
                 a(href="#") Privacy Policy
+        script(src="js/viewportchecker.js")
         script(src="js/jquery.flexslider.js")
         script(src="js/slick.min.js")
         script(src="js/row-grid.js")

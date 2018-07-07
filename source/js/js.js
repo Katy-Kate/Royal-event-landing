@@ -1,9 +1,13 @@
+//-----preloader-----
+$(window).load(function() {
+    setTimeout(function() {
+        $('.preloader').fadeOut('slow', function() {});
+    }, 2000);
 
+});
 
 $(document).ready()
 {
-
-
    //-----mobilemenu-----
     $('.mobile-nav-button').on('click', function() {
         $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
@@ -40,7 +44,6 @@ $(document).ready()
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -59,12 +62,21 @@ $(document).ready()
         // captionText.innerHTML = dots[slideIndex-1].alt;
     }
 
-
     //----gallery -  AND------------
+
+    //---------smooth transition
     $("body").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('html').animate({scrollTop: top}, 1500);
     });
+     //---------appearance of content during page loading
+
+        // jQuery('.headline').addClass("hidden").viewportChecker({
+        //     classToAdd: 'visible animated fadeIn',
+        //     offset: 100
+        // });
+
+    //---------
 };
